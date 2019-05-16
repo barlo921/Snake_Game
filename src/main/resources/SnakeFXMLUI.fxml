@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="startGameButton" layoutX="140.0" layoutY="183.0" mnemonicParsing="false" onAction="#startGame" text="Start Game">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="scoreField" layoutX="14.0" layoutY="382.0" opacity="0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score: 0" wrappingWidth="106.21875" />
+      <Text fx:id="counter" disable="true" layoutX="200.0" layoutY="150.0" opacity="0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Pane fx:id="topScoresPane" layoutX="124.0" layoutY="42.0" prefHeight="136.0" prefWidth="155.0">
+         <children>
+            <Text layoutX="34.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Score">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="33.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#1" />
+            <Text layoutX="33.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#2" />
+            <Text layoutX="33.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#3" />
+            <Text fx:id="top1" layoutX="62.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="top2" layoutX="62.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="top3" layoutX="62.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
